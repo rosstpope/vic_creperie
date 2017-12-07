@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Victoria Crepere | Delicious Creperie</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <meta property="og:title" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+  <script src="js/modernizr-2.7.1.js"></script>
+  
+</head>
+
+<script>
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 700) {
+        $(".navbar-top").addClass("darkHeader");
+    } else {
+        $(".navbar-top").removeClass("darkHeader");
+    }
+});
+
+
+
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+</script>
+
+<body>
+
+    
+    <div class="navbar navbar-inverse navbar-fixed-top visible-xs">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="logo col-xs-5" href="/"><img src="img/logo.jpg" alt="Logo"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+<!--             <li><a href="/" class="scroll">Home</a></li> -->
+            <li><a href="/faq">FAQs</a></li>
+            <li><a href="/testimonials">Testimonial</a></li>
+            <li><a href="#get_in_touch">Get in touch</a></li>
+
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+        
+    <header>
+    <div class="row header-info">
+          <div class="col-sm-10 col-sm-offset-1 text-center">
+            <div class="strapline">
+              <img src="img/header-strapline.png" />
+            </div>
+            <br />
+            <h1 class="lead fadeIn" data-wow-delay="0.5s">Delicious creperie catering for corporate events and weddings since 2008</h1>
+            <br />
+              
+
+            
+          </div>
+        </div>
+      <div class="navbar-top">
+        <div class="row">
+          <div class="col-xs-4 navbar-logo">
+            <a href="/" class="logo-top"></a>
+          </div>
+          <div class="col-xs-8 signin text-right navbar-nav">
+<!--             <a href="http://victoria-creperie.surge.sh/" class="scroll">Home&nbsp; &nbsp;</a> -->
+            <a href="/faq">FAQs&nbsp; &nbsp;</a>
+            <a class="hidden-xs" href="/testimonials">Testimonials&nbsp; &nbsp;</a>
+            <a href="#get_in_touch">Get in touch</a>
+
+          </div>
+        </div>
+        
+        
+      </div>
+
+    </header>
+
+    <div class="overlay_header hidden-sm hidden-xs">
+      <img src="img/overlay.png" />
+    </div>
+    
+  <!--   <div class="mouse-icon hidden-sm hidden-xs">
+				<div class="scroll"></div>
+			</div> -->
+    
+
+    
+    <section id="main-info" class="fadeLeft" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeInLeft;">
+	    <div class="container">
+        <div class="row fadeIn">
+          <div class="col-xs-8">
+            <img src="img/about.jpg" alt="about us section">
+          </div>
+        </div>
+        <div class="row fadeIn">
+          <div class="col-xs-12 col-sm-8">
+            <h2>Forget pancakes & small portions.</br> It's all about <span>Crepes</span>, filled to the brim.</h2>
+          </div>
+          <div class="crepe-img col-xs-4 hidden-xs">
+            <img src="img/crepe.jpg" alt="A picture of a tasty yummy lovely crepe that you should put in your tum tum">
+          </div>
+         </div>
+
+          
+
+
+
+		    <div class="row body-copy fadeIn">
+			    <p>At Victoria Creperie deeply passionate about elevating the humble crepe to glorious new heights.  We love the theatre of making something delicious infront of our customers and giving them the freshest and tastiest ingredients to be topped, poured, dripped, sprinkled or dollopped to make your dream dessert. 
+‘I want something savoury’ we hear you say. We’ve got you and your crepe covered!</p>
+	    </div>
+    </section>
+        
+        
+
+    <section id="working-with-you" class="pad-sm fadeIn">
+      <div class="container">
+        <div class="col-xs-12 intro-text">
+        <h2 class="working_strapline"><img src="img/work_with.png" /></h2>
+        <p class="col-xs-12 col-sm-offset-2 col-sm-8">There’s more to us than cooking great food. We’re also good at listening. So if you have ideas about what you want or you’re struggling to find a caterer willing to listen, then here are just a few ways we can work with you.</p>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-6 working-point">
+          <div class="icon-before"><h3>We can accomodate dietary requirements</h3>
+          <p>Just let us know prior to ordering and we'll make sure you're to confirm ingredients</p>
+        </div>
+        </div>
+
+         <div class="col-xs-12 col-sm-6 working-point">
+          <div class="icon-before"><h3>We take out the hassel</h3>
+          <p>We can provide everything you need so all you need to do is sit back and enjoy a delicious crepe.</p></div>
+        </div>
+
+         <div class="col-xs-12 col-sm-6 working-point">
+          <div class="icon-before"><h3>It's your day, in your way</h3>
+          <p>I've you're into crepes with a twist, let us know and we can make something unique</p></div>
+        </div>
+
+         <div class="col-xs-12 col-sm-6 working-point">
+          <div class="icon-before"><h3>We can dress to suit your occasion</h3>
+          <p>We can dress to suit your occasion</p></div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <section id="what-we-do" class="pad-sm">
+      <div class="container">
+        <h2 class="what-we-do_strapline"><img src="img/what_we_do.png" /></h2>
+        <p class="pad-sm">We’ve been taking our mobile creperie all across the Midlands since 2008, serving up the tastiest crepes for corporations and weddings. </p>
+
+        <div class="banner-item col-xs-12 fadeIn">
+          <div class="col-sm-5 banner-img">
+          </div>
+          <div class="col-sm-7 banner-content">
+            <h3>Weddings</h3>
+            <p>Your big day needs to be perfect. No arguments there. Catering is a huge part of it and with so much diversity in quising these days picking something can be a nightmare. 
+            </br>
+              Our skilled team offer you a huge selections of toppings, the exciting experience of getting their order made infront of them.
+                </br>
+            We’ve delighted newley weds and their guests across the UK for years. Why not check out the menu first and then talk to us about it in more detail?
+            </p>
+            <a href="#" class="button"> Download sample menu </a>
+          </div>
+        </div>
+
+        <div class="banner-item col-xs-12 fadeIn">
+          <div class="col-sm-5 banner-img visible-xs">
+          </div>
+          <div class="col-sm-7 banner-content">
+            <h3>Corporate events</h3>
+            <p>Whether it's a staff party or you're putting on an event for guests, we can plate up some of the tastiest food to keep your guests happy and the conversations flowing.
+            </br>
+              Our team can set up inside or outside a venue and proide plates for all your guests. The best thing is we don't need curlery, you can eat it anywhere. If your guests are messy eaters then we've got plenty of napkins for them to keep their suits looking sharp.
+            </p>
+            <a href="#" class="button"> Download sample menu </a>
+          </div>
+          <div class="col-sm-5 banner-img hidden-xs">
+          </div>
+        </div>
+
+
+    </section>
+
+
+    <!--Packages-->
+
+<div class="packages-header">
+        <h2 class="what-we-do_strapline"><img src="img/packages.png" /></h2>
+</div>
+
+
+<div class="packages-section">
+      <main class="hidden-xs">
+  
+  <input id="tab1" type="radio" name="tabs" checked>
+  <label for="tab1">Weddings</label>
+    
+  <input id="tab2" type="radio" name="tabs">
+  <label for="tab2">Corporate events</label>
+    
+  <input id="tab3" type="radio" name="tabs">
+  <label for="tab3">Private Parties</label>
+
+    
+  <article id="content1">
+
+    <div class="tabbed-left col-xs-6">
+    <p>Our self sufficient set up means we can cater in or outside any venue or marquee and we can even personalise our table cloths or menus to fit in with your theme.</p>
+
+    <p>Our etended toppings menu allows each and every guest to create their perfect crepe, whether its sweet, savoury, vegetarian or gluten free. And if you had a filling wedding breakfast meal and are worried people might not be that hungry, we can also do mini crepes!</p>
+    </div>
+
+    <div class="tabbed-right col-xs-6">
+    <p> Our wedding packages include all of the following as standard:</p>
+    <ul>
+      <li>Unlimited homemade crepes and/or galettes</li>
+      <li>Made fresh for 2hrs in front of your guests</li>
+      <li>Unlimited toppings (see our menu)</li>
+      <li>Dynamic & friendly frepe chefs in uniforms</li>
+      <li>Disposable cones, cutlery and napkins</li>
+    </ul>
+    </div>
+
+    <div class="tabbed-footer col-xs-12">
+      <div class="tabbed-footer-left col-xs-6">
+      <p><strong>Sample wedding evening reception crepe bar</strong></br>
+      Based on unlimited sweet & savory crepes for 100 guests, 2hrs, 2chefs (transport additional)</p>
+      <p class="price"><strong>only £525+VAT*</strong></p>
+      </div>
+      <div class="tabbed-footer-right col-xs-6">
+      <a href="" class="button">Email us</a>
+      <a href="" class="button">Call us</a>
+      </div>
+
+    </div>
+
+  </article>
+    
+  <article id="content2">
+       <div class="tabbed-left col-xs-6">
+    <p>Our self sufficient set up means we can cater in or outside any venue or marquee and we can even personalise our table cloths or menus to fit in with your theme.</p>
+
+    <p>Our etended toppings menu allows each and every guest to create their perfect crepe, whether its sweet, savoury, vegetarian or gluten free. And if you had a filling wedding breakfast meal and are worried people might not be that hungry, we can also do mini crepes!</p>
+    </div>
+
+    <div class="tabbed-right col-xs-6">
+    <p> Our corporate packages include all of the following as standard:</p>
+    <ul>
+      <li>Unlimited homemade crepes and/or galettes</li>
+      <li>Made fresh for 2hrs in front of your guests</li>
+      <li>Unlimited toppings (see our menu)</li>
+      <li>Dynamic & friendly frepe chefs in uniforms</li>
+      <li>Disposable cones, cutlery and napkins</li>
+    </ul>
+    </div>
+
+    <div class="tabbed-footer col-xs-12">
+      <div class="tabbed-footer-left col-xs-6">
+      <p><strong>Sample wedding evening reception crepe bar</strong></br>
+      Based on unlimited sweet & savory crepes for 100 guests, 2hrs, 2chefs (transport additional)</p>
+      <p class="price"><strong>only £525+VAT*</strong></p>
+      </div>
+      <div class="tabbed-footer-right col-xs-6">
+      <a href="" class="button">Email us</a>
+      <a href="" class="button">Call us</a>
+      </div>
+
+    </div>
+  </article>
+    
+  <article id="content3">
+       <div class="tabbed-left col-xs-6">
+    <p>Our self sufficient set up means we can cater in or outside any venue or marquee and we can even personalise our table cloths or menus to fit in with your theme.</p>
+
+    <p>Our etended toppings menu allows each and every guest to create their perfect crepe, whether its sweet, savoury, vegetarian or gluten free. And if you had a filling wedding breakfast meal and are worried people might not be that hungry, we can also do mini crepes!</p>
+    </div>
+
+    <div class="tabbed-right col-xs-6">
+    <p> Our private party packages include all of the following as standard:</p>
+    <ul>
+      <li>Unlimited homemade crepes and/or galettes</li>
+      <li>Made fresh for 2hrs in front of your guests</li>
+      <li>Unlimited toppings (see our menu)</li>
+      <li>Dynamic & friendly frepe chefs in uniforms</li>
+      <li>Disposable cones, cutlery and napkins</li>
+    </ul>
+    </div>
+
+    <div class="tabbed-footer col-xs-12">
+      <div class="tabbed-footer-left col-xs-6">
+      <p><strong>Sample wedding evening reception crepe bar</strong></br>
+      Based on unlimited sweet & savory crepes for 100 guests, 2hrs, 2chefs (transport additional)</p>
+      <p class="price"><strong>only £525+VAT*</strong></p>
+      </div>
+      <div class="tabbed-footer-right col-xs-6">
+      <a href="" class="button">Email us</a>
+      <a href="" class="button">Call us</a>
+      </div>
+
+    </div>
+
+
+</main>    
+
+</div>
+
+<section class="visible-xs packages-mobile">
+
+  <div class="package-mobile">
+  <h3>Weddings</h3>
+    <p>Our self sufficient set up means we can cater in or outside any venue or marquee and we can even personalise our table cloths or menus to fit in with your theme.</p>
+
+    <p>Our etended toppings menu allows each and every guest to create their perfect crepe, whether its sweet, savoury, vegetarian or gluten free. And if you had a filling wedding breakfast meal and are worried people might not be that hungry, we can also do mini crepes!</p>
+
+        <p> Our wedding packages include all of the following as standard:</p>
+    <ul>
+      <li>Unlimited homemade crepes and/or galettes</li>
+      <li>Made fresh for 2hrs in front of your guests</li>
+      <li>Unlimited toppings (see our menu)</li>
+      <li>Dynamic & friendly frepe chefs in uniforms</li>
+      <li>Disposable cones, cutlery and napkins</li>
+    </ul>
+<div class="package-sample">
+          <p><strong>Sample wedding evening reception crepe bar</strong></br>
+      Based on unlimited sweet & savory crepes for 100 guests, 2hrs, 2chefs (transport additional)</p>
+      <p class="price"><strong>only £525+VAT*</strong></p>
+
+</div>
+
+      <a href="" class="button">Email us</a>
+      <a href="" class="button">Call us</a>
+
+  </div>
+
+  <div class="package-mobile">
+  <h3>Corporate events</h3>
+    <p>Our self sufficient set up means we can cater in or outside any venue or marquee and we can even personalise our table cloths or menus to fit in with your theme.</p>
+
+    <p>Our etended toppings menu allows each and every guest to create their perfect crepe, whether its sweet, savoury, vegetarian or gluten free. And if you had a filling wedding breakfast meal and are worried people might not be that hungry, we can also do mini crepes!</p>
+
+        <p> Our wedding packages include all of the following as standard:</p>
+    <ul>
+      <li>Unlimited homemade crepes and/or galettes</li>
+      <li>Made fresh for 2hrs in front of your guests</li>
+      <li>Unlimited toppings (see our menu)</li>
+      <li>Dynamic & friendly frepe chefs in uniforms</li>
+      <li>Disposable cones, cutlery and napkins</li>
+    </ul>
+<div class="package-sample">
+          <p><strong>Sample wedding evening reception crepe bar</strong></br>
+      Based on unlimited sweet & savory crepes for 100 guests, 2hrs, 2chefs (transport additional)</p>
+      <p class="price"><strong>only £525+VAT*</strong></p>
+
+</div>
+
+      <a href="" class="button">Email us</a>
+      <a href="" class="button">Call us</a>
+
+  </div>
+
+  <div class="package-mobile">
+  <h3>Private parties</h3>
+    <p>Our self sufficient set up means we can cater in or outside any venue or marquee and we can even personalise our table cloths or menus to fit in with your theme.</p>
+
+    <p>Our etended toppings menu allows each and every guest to create their perfect crepe, whether its sweet, savoury, vegetarian or gluten free. And if you had a filling wedding breakfast meal and are worried people might not be that hungry, we can also do mini crepes!</p>
+
+        <p> Our wedding packages include all of the following as standard:</p>
+    <ul>
+      <li>Unlimited homemade crepes and/or galettes</li>
+      <li>Made fresh for 2hrs in front of your guests</li>
+      <li>Unlimited toppings (see our menu)</li>
+      <li>Dynamic & friendly frepe chefs in uniforms</li>
+      <li>Disposable cones, cutlery and napkins</li>
+    </ul>
+<div class="package-sample">
+          <p><strong>Sample wedding evening reception crepe bar</strong></br>
+      Based on unlimited sweet & savory crepes for 100 guests, 2hrs, 2chefs (transport additional)</p>
+      <p class="price"><strong>only £525+VAT*</strong></p>
+
+</div>
+
+      <a href="" class="button">Email us</a>
+      <a href="" class="button">Call us</a>
+
+  </div>
+
+</section>
+  
+<h2 class="gallery-strapline margin-top-large"><img src="img/gallery.png" /></h2>
+<div class="gallery">
+
+<!--Flexbox images -->
+
+<div><img src="img/cake1.png" alt></div>
+<div><img src="img/cake2.png" alt></div>
+<div><img src="img/cake3.png" alt></div>
+<div><img src="img/cake4.png" alt></div>
+<div><img src="img/cake5.png" alt></div>
+<div><img src="img/cake6.png" alt></div>
+<div><img src="img/cake7.png" alt></div>
+<div><img src="img/cake8.png" alt></div>
+<div><img src="img/cake9.png" alt></div>
+<div><img src="img/cake10.png" alt></div>
+
+</div>
+
+    
+<h2 class="working_strapline margin-top"><img src="img/testimonials.png" /></h2>
+
+<div class="testimonial">
+  <div class="testi-img"><img class="testicle" src="img/testimonial.png"/></div>
+  <h3>Denise Bridgeman</h3>
+  <p class="company_name">Key account manage - Business sales at air canada</p>
+  <p class="quote">Many thanks to Michael and his brother for their excellant crepes this afternoon. My client(ATPi) was really impressed and their staff loved the crepes. Victoria Creperie comes highly recommended and I would certainly use their services again.</p>
+
+</div>
+
+<a id="get_in_touch" href="/testimonials" class="testi-button button">See more testimonials</a>
+
+<div>
+<h2 class="working_strapline margin-top git_strapline"><img src="img/get_in_touch.jpg" /></h2>
+</div>
+
+<div class="contact_form"/>
+ <form id="contact" action="" method="post">
+    <h4>Your details</h4>
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+    </fieldset>
+
+    <h4> Event details </h4>
+    <fieldset>
+      <input placeholder="Event type" type="text" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <input class="date_field" placeholder="Event date" type="text" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="How did you hear about us?" type="url" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button class="button" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Email us your questions</button>
+    </fieldset>
+
+  </form>
+</div>
+
+    
+    <footer>
+      <div class="container">
+        
+        <div class="souvlaki_logo col-xs-4 col-sm-4">
+          <img src="img/souvlaki_white.png" />
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 we_also">
+          <img src="img/we_also.png" />
+          <a href="" class="button">Check out street souvlaki</a>
+        </div>  
+
+        
+      </div>
+    </footer>
+    
+    
+    <!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+   
+    </body>
+</html>
